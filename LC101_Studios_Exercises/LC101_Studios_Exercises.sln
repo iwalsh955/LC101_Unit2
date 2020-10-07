@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Studio_2.6", "Studio_2.6\Studio_2.6.csproj", "{C67361DF-67E7-44F4-8299-89232AE402E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantMenu", "Studio_4.8\RestaurantMenu.csproj", "{4819C4F1-F813-4D5A-9C99-2F204EE6F8CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Studio_4.8", "Studio_4.8\Studio_4.8.csproj", "{4819C4F1-F813-4D5A-9C99-2F204EE6F8CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
