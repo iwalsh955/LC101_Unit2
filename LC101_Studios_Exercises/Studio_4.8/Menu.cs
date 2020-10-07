@@ -8,19 +8,11 @@ namespace Studio_4._8
     {
         private List<MenuItem> menuItems = new List<MenuItem>();
         private DateTime lastUpdated;
-        public menu()
-        {
-      
-            menuItems.Add(new MenuItem("spare ribs", 10.99, "ribs", "main course"));
-            menuItems.Add(new MenuItem("chicken soup", 5000.25, "warm soup", "appetizer"));
-            menuItems.Add(new MenuItem("chocolate cake", 0.99, "cold cake", "dessert"));
-            lastUpdated = DateTime.Now;
-        }
         public void output()
         {
             foreach (MenuItem item in menuItems)
             {
-                if (item.Name == menuItems[menuItems.Count-1].Name)
+                if (item.IsNew)
                 {
                     Console.Write("NEW!!!!!!   \n");
                 }
@@ -33,6 +25,9 @@ namespace Studio_4._8
         {
             menuItems.Add(new MenuItem(name, price, desc, category));
             lastUpdated = DateTime.Now;
+            menuItems[menuItems.Count - 1].IsNew = true;
+            if(menuItems.Count>1)
+                menuItems[menuItems.Count - 2].IsNew = false;
         }
     }
 }
